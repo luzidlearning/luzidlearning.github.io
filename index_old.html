@@ -4,11 +4,17 @@ layout: default
 <div class="container">
 	<div class="row">
 		{% for post in site.posts %}
-		<a href="{{ post.url | prepend: site.baseurl }}">
-			<div class="col-sm-3 post" style="background-image: url(//i.ytimg.com/vi/{{ post.youtube }}/maxresdefault.jpg);">
-			</div>
-		</a>
+		<div class="col-sm-3">
+			
+			
+		</div>
 		{% endfor %}
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-9"></div>
+			<div class="col-sm-3"></div>
+		</div>
 	</div>
 </div>
 
@@ -20,6 +26,7 @@ layout: default
 		{% for post in site.posts %}
 		<li>
 			<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
 			<h2>
 				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 			</h2>
